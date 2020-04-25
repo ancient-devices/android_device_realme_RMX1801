@@ -275,6 +275,7 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.safailnet.rc \
     init.target.rc \
+    init.spectrum.rc \
     ueventd.qcom.rc
 
 # IRSC
