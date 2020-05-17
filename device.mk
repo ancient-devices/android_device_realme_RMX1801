@@ -20,9 +20,6 @@ $(call inherit-product, vendor/realme/RMX1801/RMX1801-vendor.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
-
 # Enable iorapd perfetto tracing for app starts
 PRODUCT_PROPERTY_OVERRIDES += \
     iorapd.perfetto.enable=true
