@@ -266,7 +266,6 @@ PRODUCT_PACKAGES += \
     init.qti.qseecomd.sh \
     init.recovery.qcom.rc \
     init.target.rc \
-    init.spectrum.rc \
     ueventd.qcom.rc
 
 # IRSC
