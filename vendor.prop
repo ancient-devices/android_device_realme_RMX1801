@@ -91,6 +91,9 @@ persist.vendor.dpm.feature=0
 # Codec2 switch
 debug.media.codec2=2
 
+# Dolby
+vendor.audio.dolby.ds2.enabled=true
+
 # DRM
 drm.service.enabled=true
 
