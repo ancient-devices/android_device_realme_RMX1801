@@ -1,0 +1,16 @@
+[
+  {
+    "remote": "github",
+    "repository": "ancient-devices/android_kernel_realme_sdm660",
+    "target_path": "kernel/realme/sdm660",
+    "branch": "lineage-17.1",
+    "clone-depth": "1"
+  },
+  {
+    "remote": "github",
+    "repository": "ancient-devices/proprietary_vendor_realme",
+    "target_path": "vendor/realme",
+    "branch": "ten",
+    "clone-depth": "1"
+  }
+]
