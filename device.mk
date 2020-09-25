@@ -339,6 +339,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RealmeParts
 
+# Prebuilt Apps
+PRODUCT_PACKAGES += \
+    Calculator \
+    Clock
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4 \
