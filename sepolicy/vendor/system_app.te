@@ -11,6 +11,8 @@ allow system_app sysfs_vibrator:dir search;
 
 allow system_app sysfs_usb_supply:dir { search write };
 allow system_app proc_touchpanel:dir { search write };
+allow system_app sysfs_usb_supply:file { read open getattr write };
+allow system_app proc_touchpanel:file { read open getattr write };
 
 # Sound Control
 allow system_app sysfs_hgain:file { open read getattr write };
