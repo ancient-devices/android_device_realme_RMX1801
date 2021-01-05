@@ -1,5 +1,6 @@
 allow system_server sysfs_rtc:file r_file_perms;
 allow system_server sysfs_vibrator:file rw_file_perms;
+allow system_server init:binder call;
 
 get_prop(system_server, oppo_loc_prop)
 get_prop(system_server, exported_camera_prop);
