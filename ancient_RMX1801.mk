@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Nusantara stuff
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+# Inherit some common Ancient stuff
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
 # Inherit from Realme RMX1801
 $(call inherit-product, device/realme/RMX1801/device.mk)
@@ -29,10 +29,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Nusantara Properties
-NAD_BUILD_TYPE := OFFICIAL
+# Ancient Properties
+ANCIENT_OFFICIAL := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_BLUR := true
 
-PRODUCT_NAME := nad_RMX1801
+PRODUCT_NAME := ancient_RMX1801
 PRODUCT_DEVICE := RMX1801
 PRODUCT_MANUFACTURER := OPPO
 PRODUCT_BRAND := oppo
