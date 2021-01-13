@@ -218,8 +218,7 @@ PRODUCT_PACKAGES += \
     Calculator \
     Clock \
     GCam \
-    RetroMusic \
-    ViaBrowser
+    RetroMusic
 
 # GPS
 PRODUCT_PACKAGES += \
