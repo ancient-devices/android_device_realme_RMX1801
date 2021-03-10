@@ -91,3 +91,7 @@ ro.vendor.sensors.sta_detect=true
 # SSR
 persist.vendor.ssr.enable_ramdumps=0
 persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# WFD
+persist.debug.wfd.enable=1
+persist.hwc.enable_vds=1
