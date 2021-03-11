@@ -1,0 +1,1 @@
+allow bluetooth cgroup:file { write open };
