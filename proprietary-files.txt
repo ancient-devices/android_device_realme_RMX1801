@@ -2667,6 +2667,9 @@ vendor/lib64/libtzdrmgenprov.so
 # DRM-HDCP
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
+vendor/lib/libhdcp1prov.so
+vendor/lib/libhdcp2p2prov.so
+vendor/lib/libhdcpsrm.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
