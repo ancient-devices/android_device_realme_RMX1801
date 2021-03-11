@@ -216,7 +216,6 @@ PRODUCT_PACKAGES += \
 # Prebuilt App
 PRODUCT_PACKAGES += \
     Calculator \
-    Clock \
     GCam \
     RetroMusic
 
