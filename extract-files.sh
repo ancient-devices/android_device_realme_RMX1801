@@ -27,7 +27,7 @@ if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 LINEAGE_ROOT="${MY_DIR}/../../.."
 
-HELPER="${LINEAGE_ROOT}/vendor/lineage/build/tools/extract_utils.sh"
+HELPER="${LINEAGE_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -66,10 +66,10 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" ${KANG} --section "${SECTION}
 
 # Fix proprietary blobs
 patchelf --replace-needed "libcutils.so" "libcutils-v29.so" \
-        "${AOSP_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary/product/lib64/libdpmframework.so"
+        "${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary/product/lib64/libdpmframework.so"
 
 patchelf --add-needed "libcutils.so" \
-        "${AOSP_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary/product/lib64/libdpmframework.so"
+        "${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary/product/lib64/libdpmframework.so"
 
 sed -i 's/xml version="2.0"/xml version="1.0"/g' \
         "${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml" \
