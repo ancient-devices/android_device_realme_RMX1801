@@ -15,6 +15,8 @@ allow system_app proc_touchpanel:dir search;
 allow system_app sysfs_usb_supply:file rw_file_perms;
 allow system_app proc_touchpanel:file rw_file_perms;
 
+allow system_app proc_vmallocinfo:file { read open getattr };
+
 # Sound Control
 allow system_app sysfs_hgain:file { open read getattr write };
 allow system_app sysfs_mgain:file { open read getattr write };
@@ -22,6 +24,9 @@ allow system_app sysfs_mgain:file { open read getattr write };
 # Allow access switches
 allow system_app sysfs_switch:dir search;
 allow system_app sysfs_switch:file rw_file_perms;
+
+# FPS
+allow system_app sysfs_fps:file { read open getattr };
 
 get_prop(system_app, vendor_persist_camera_prop)
 
