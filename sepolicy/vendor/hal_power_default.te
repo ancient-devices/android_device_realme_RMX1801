@@ -9,5 +9,10 @@ set_prop(hal_power_default, vendor_power_prop)
 allow hal_power_default device_latency:chr_file rw_file_perms;
 allow hal_power_default { sysfs_devices_system_cpu sysfs_msm_subsys }:file rw_file_perms;
 allow hal_power_default sysfs_msm_subsys:dir search;
+allow hal_power_default sysfs_devfreq:dir search;
+allow hal_power_default sysfs_devfreq:file { open read write };
+allow hal_power_default sysfs_kgsl:file { open read write };
+allow hal_power_default sysfs_kgsl:lnk_file read;
+allow hal_power_default hal_power_default:capability sys_resource;
 
 dontaudit hal_power_default cgroup:file read;
